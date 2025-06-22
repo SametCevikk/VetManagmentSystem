@@ -104,14 +104,6 @@ public class VaccineService implements dev.patika.VetManagementSystem.service.ab
         vaccineDAO.deleteById(id);
     }
 
-    public List<VaccineResponse> getAnimalVaccines(Long id) {
-
-        Animal animal = animalDAO.findById(id)
-                .orElseThrow(() -> new NotFoundException(Msg.NOT_FOUND));
-
-        return animal.getVaccineList().stream()
-                .map(vaccine -> modelMapper.forResponse().map(vaccine,VaccineResponse.class)).toList();
-    }
 
     public List<VaccineWithAnimalResponse> getUnexpiredVaccines(LocalDate start, LocalDate end){
 

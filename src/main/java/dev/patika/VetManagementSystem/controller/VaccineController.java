@@ -77,13 +77,6 @@ public class VaccineController {
 
     }
 
-    @GetMapping("/animal/{id}")
-    @ResponseStatus(HttpStatus.OK)
-    public List<VaccineResponse> getAnimalVaccines(@PathVariable("id") Long id){
-
-        return  vaccineService.getAnimalVaccines(id);
-
-    }
 
     @GetMapping("/by-animal/{id}")
     @ResponseStatus(HttpStatus.OK)
