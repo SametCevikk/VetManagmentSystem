@@ -71,7 +71,7 @@ VetManagementSystem/
 
 ## API Structure & Endpoints
 
-The project includes a [Postman collection](./SametCevik.postman_collection.json) to test endpoints
+The project includes a [Postman collection](./postman/SametCevik.postman_collection.json) to test endpoints
 
 ### Animals
 - `POST /v1/animals` — Create a new animal  
