@@ -67,7 +67,7 @@ VetManagementSystem/
 
 ## Entity Relationship Diagram
 
-![UML Diagram](./VetManagerSystemUML.png)
+![UML Diagram](./images/VetManagerSystemUML.png)
 
 ## API Structure & Endpoints
 
