@@ -49,7 +49,7 @@ public class VaccineService implements dev.patika.VetManagementSystem.service.ab
                           existsVaccine.getName().equalsIgnoreCase(vaccine.getName()) &&
                           existsVaccine.getCode().equalsIgnoreCase(vaccine.getCode()) &&
                           existsVaccine.getProtectionFinishDate() != null &&
-                          existsVaccine.getProtectionFinishDate().isAfter(LocalDate.now()));
+                          existsVaccine.getProtectionFinishDate().isAfter(vaccine.getProtectionStartDate()));
 
         if(exists){
            throw new ConflictException(Msg.RESOURCE_ALREADY_EXISTS);

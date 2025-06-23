@@ -6,6 +6,7 @@ import dev.patika.VetManagementSystem.core.result.ResultHelper;
 import dev.patika.VetManagementSystem.dto.request.animal.AnimalSaveRequest;
 import dev.patika.VetManagementSystem.dto.request.animal.AnimalUpdateRequest;
 import dev.patika.VetManagementSystem.dto.response.animal.AnimalResponse;
+import dev.patika.VetManagementSystem.entities.Animal;
 import dev.patika.VetManagementSystem.service.concretes.AnimalService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
